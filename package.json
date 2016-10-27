@@ -1,6 +1,5 @@
 {
   "name": "ten-x-dev",
-  "version": "0.0.0-determined-by-smantic-release",
   "description": "determine is you are a 10x dev or not",
   "main": "index.js",
   "scripts": {
@@ -12,11 +11,12 @@
     "setup": "npm install && npm run validate",
     "start": "npm run test",
     "watch:test": "npm t -- --watch",
-    "test": "mocha src/index.test.js --compilers js:babel-register"
+    "test": "mocha src/index.test.js --compilers js:babel-register",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Khaledgarbaya/ten-X-dev.git"
+    "url": "https://github.com/Khaledgarbaya/ten-X-dev.git"
   },
   "keywords": [
     "random",
@@ -48,7 +48,7 @@
     "npm-run-all": "2.3.0",
     "nyc": "7.1.0",
     "rimraf": "2.5.4",
-    "semantic-release": "^4.2.1",
+    "semantic-release": "^4.3.5",
     "webpack": "1.13.1"
   },
   "engines": {
